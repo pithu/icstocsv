@@ -1,0 +1,20 @@
+{
+  "name": "icstocsv",
+  "version": "0.0.1",
+  "description": "README.md",
+  "main": "",
+  "bin": {
+    "icstocsv": "app.coffee"
+  },
+  "dependencies": {
+    "jade": "~0.28.1",
+    "express": "~3.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "pithu",
+  "license": "BSD"
+}

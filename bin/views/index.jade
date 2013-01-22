@@ -1,0 +1,13 @@
+!!! 5
+html
+  head
+    title ics to csv
+  body
+    h2 very basic ics to csv converter
+    h3 input the url of your ics
+    form(name="input", action="/", method="post")
+        p key host: (p.e. www.google.com)
+            input(type="text", name="icsHost")
+        p key path: (p.e. /my/path/to/my/private/basic.ics)
+            input(type="text", name="icsPath")
+        input(type="submit", value="Submit")

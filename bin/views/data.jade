@@ -3,7 +3,7 @@ html
   head
     title ics to csv
   body
-    | start; end; summary; description <br>
+    | start, end, duration, summary, description <br>
     for event in events
-       | #{event.start}; #{event.end}; #{event.summary}; #{event.description} <br>
+       | #{event.start.toDateString()}, #{event.end.toDateString()}, #{event.end - event.start}, "#{event.summary}", "#{event.description}" <br>
 

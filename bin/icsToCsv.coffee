@@ -11,7 +11,6 @@ convertIcsDateToJsDate = (icsDateTimeStr) ->
 
 
 exports.parseChunk = (data, callback) ->
-  console.log("huhu")
   startsWith = (value, pattern) ->
     value.indexOf(pattern) is 0
 

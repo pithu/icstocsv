@@ -5,5 +5,5 @@ html
   body
     | start, end, duration, summary, description <br>
     for event in events
-       | #{event.start.toDateString()}, #{event.end.toDateString()}, #{event.end - event.start}, "#{event.summary}", "#{event.description}" <br>
+       | #{event.start.toISOString()}, #{event.end.toISOString()}, #{(event.end - event.start)/(60*60*1000)}, "#{event.summary}", "#{event.description}" <br>
 

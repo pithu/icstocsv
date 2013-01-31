@@ -8,8 +8,8 @@ Globalize = require('globalize')
 Globalize.culture("de")
 
 
-url = process.argv[2]
-filterArg = if process.argv[3]? then process.argv[3].toUpperCase() else 'NONE'
+filterArg = process.argv[2]
+url = process.argv[3]
 
 if filterArg == 'PREV'
     now = moment().subtract('months', 1)
@@ -33,8 +33,8 @@ sortAndFilterEvents = (events) ->
     for key of events
         event = events[key]
         continue if !event || !event.summary
-        event.description ?= ""
         continue if doDateFilter(event.start)
+        event.description ?= ""
         eventEntries.push(event)
     eventEntries.sort (a, b) ->
         return a.start - b.start

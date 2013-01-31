@@ -8,7 +8,7 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.errorHandler());
 
-app.set('views', __dirname + '/views');
+app.set('views', __dirname + '/../views');
 app.set('view engine', 'jade');
 
 app.get('/', (req, res) ->

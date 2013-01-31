@@ -15,7 +15,7 @@ exports.parseChunk = (data, callback) ->
     value.indexOf(pattern) is 0
 
   pattern = /(.+):(.+)/g
-  events = new Array()
+  events = []
 
   while (result = pattern.exec(data))  isnt null
     if startsWith(result[1],'BEGIN') and startsWith(result[2],'VEVENT')

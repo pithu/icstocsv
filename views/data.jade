@@ -2,8 +2,9 @@
 html
   head
     title ics to csv
+    script(src='/javascripts/moment.min.js')
   body
     | start, end, duration, summary, description <br>
     for event in events
-       | #{event.start.toISOString()}, #{event.end.toISOString()}, #{(event.end - event.start)/(60*60*1000)}, "#{event.summary}", "#{event.description}" <br>
+       | #{event.start}, #{event.end}, #{(event.end - event.start)/(60*60*1000)}, "#{event.summary}", "#{event.description}" <br>
 

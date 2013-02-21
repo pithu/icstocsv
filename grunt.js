@@ -29,5 +29,4 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-coffee');
 
     grunt.registerTask('default', 'coffee lint test');
-
 };

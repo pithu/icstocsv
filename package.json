@@ -14,7 +14,8 @@
     "grunt-coffee": "0.0.6",
     "ical": "0.0.6",
     "carrier": "~0.1.10",
-    "icalevent": "0.0.2"
+    "icalevent": "0.0.2",
+    "globalize": "~0.1.1"
   },
   "devDependencies": {},
   "scripts": {
